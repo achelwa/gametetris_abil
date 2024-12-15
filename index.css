@@ -1,0 +1,58 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background: linear-gradient(135deg, #2d2d2d, #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8); /* Glow effect */
+    background: rgba(0, 0, 0, 0.7);
+}
+
+canvas {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Canvas glow effect */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00FF00;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Skor animasi: bounce effect */
+#score.updated {
+    transform: scale(1.2);
+}
+
+/* Menambahkan animasi glowing untuk tombol atau elemen lainnya jika ada */
+button, .button {
+    background-color: #00FF00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover, .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+}
